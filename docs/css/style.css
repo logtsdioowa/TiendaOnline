@@ -264,7 +264,7 @@ footer {
     aspect-ratio: 4 / 3;
     object-fit:contain ;
     display: block;
-    margin: 0 auto 10px;
+    margin: 10px auto 10px;
     border: 1.5px solid var(--beige-border);
 }
 
