@@ -1,0 +1,29 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Entornos
+.env
+*.env
+appsettings.Production.json
+appsettings.Development.json
+
+# Dependencias/build
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+*.user
+*.suo
+*.bak
+*.mdf
+*.ldf
+
+node_modules/

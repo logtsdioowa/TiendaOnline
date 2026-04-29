@@ -1,0 +1,198 @@
+
+/* =========================
+   BODY (ESTILO TU TIENDA)
+========================= */
+
+body {
+    margin: 5px;
+    min-height: 100vh;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: #e1004b56; /* mismo estilo que tu tienda */
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.mainBody {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+/* =========================
+   HEADER ADMIN 
+========================= */
+
+.admin-header {
+    background-color: #ffc0cb;
+
+    border: 3px solid black;
+    border-radius: 15px;
+
+    width: 95%;
+    height: 90px;
+
+    margin: 10px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1000;
+}
+
+/* TITULO */
+#TP {
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* BOTÓN LOGOUT */
+.logout-btn {
+    position: center;
+
+    background-color: #e1004b;
+    color: white;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    padding: 6px 12px;
+
+    font-family: inherit;
+}
+
+/* =========================
+   SECCIÓN PRODUCTOS
+========================= */
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* CONTENEDOR */
+#Products {
+    background-color: #ffc0cb;
+
+    border: 3px solid black;
+    border-radius: 20px;
+
+    padding: 20px;
+    margin: 20px auto;
+
+    width: 100%;
+}
+
+/* =========================
+   CARDS (MISMO ESTILO TIENDA)
+========================= */
+
+.card {
+    background-color: rgb(255, 251, 255);
+
+    border-radius: 25px;
+    border: 2px solid black;
+
+    margin: 5px;
+
+    font-family: inherit;
+}
+
+.card img {
+    border-radius: 25px 25px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn-success {
+    border: 2px solid black;
+}
+
+.btn-danger {
+    border: 2px solid black;
+}
+
+.btn-primary {
+    border: 2px solid black;
+}
+
+/* =========================
+   MODALS (COHERENTE CON TU ESTILO)
+========================= */
+
+.modal-content {
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+.modal-header {
+    background-color: #ffc0cb;
+}
+
+.modal-body {
+    font-family: inherit;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 767px) {
+
+    .admin-header {
+        height: 80px;
+        border-radius: 0;
+    }
+
+    #Products {
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+    
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    
+    font-size: 14px;
+    font-weight: 500;
+    
+    opacity: 0;
+    pointer-events: none;
+    
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+
+/* visible */
+.notification.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
