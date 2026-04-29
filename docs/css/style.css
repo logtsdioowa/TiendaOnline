@@ -224,7 +224,7 @@ footer {
     color: var(--text-primary);
     border-radius: var(--radius-md);
     border: 1.5px solid var(--beige-border);
-    margin: 8px 0;
+    margin: 8px ;
     overflow: hidden;
     text-transform: uppercase, bold ;
     transition: box-shadow 0.2s var(--ease), transform 0.2s var(--ease);
@@ -243,12 +243,15 @@ footer {
     color: var(--text-primary);
     border-radius: var(--radius-md);
     border: 1.5px solid var(--beige-border);
-    margin: 8px 0;
+    margin: 8px ;
     overflow: hidden;
     transition: box-shadow 0.2s var(--ease), transform 0.2s var(--ease);
 }
 .card h5{
-     font-family: "Nerko One", cursive !important;
+      font-family: "Nerko One", cursive !important;
+    text-align: center;      /* centra el texto */
+    margin-top: 25px;        /* separa del top */
+    margin-bottom: 0;     /* espacio abajo */
 }
 
 .card p {
@@ -259,7 +262,7 @@ footer {
     border-radius: var(--radius-sm);
     width: 85%;
     aspect-ratio: 4 / 3;
-    object-fit: cover;
+    object-fit:contain ;
     display: block;
     margin: 0 auto 10px;
     border: 1.5px solid var(--beige-border);
@@ -278,6 +281,18 @@ footer {
     text-align: center;
     width: 100%;
     display: block;
+}
+.category-section {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.category-title {
+    text-align: center;
+    font-family: "Titan One", sans-serif;
+    margin-bottom: 25px;
+    color: var(--text-primary);
+    text-transform: uppercase;
 }
 
 

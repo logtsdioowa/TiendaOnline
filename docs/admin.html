@@ -18,9 +18,6 @@
 
     <!-- HEADER -->
     <header class="admin-header">
-
-    <h1 id="TP">Panel Admin</h1>
-
     <button onclick="logout()" class="logout-btn">
         Cerrar sesión
     </button>
@@ -36,6 +33,7 @@
             + Agregar producto
         </button>
         <div class="row" id="productsContainer">
+          
             <!-- Aquí se insertan las cards -->
         </div>
 
@@ -103,6 +101,12 @@
             <label class="form-label" for="editImage"  >Nueva imagen (opcional)</label>
             <input type="file" id="editImage" class="form-control" accept="image/*">
         </div>
+              <div class="mb-2">
+                  <label class="form-label" for="editCategory">Categoría</label>
+                  <select id="editCategory" class="form-control">
+                      <option value="">Selecciona categoría</option>
+                  </select>
+              </div>
 
       </div>
 
@@ -129,6 +133,9 @@
         <input type="text" id="addDescription" class="form-control mb-2" placeholder="Descripción">
         <input type="number" id="addPrice" class="form-control mb-2" placeholder="Precio">
         <input type="file" id="addImage" class="form-control">
+        <select id="addCategory" class="form-control mb-2">
+          <option value="">Selecciona categoría</option>
+      </select>
       </div>
 
       <div class="modal-f<img src="${API_BASE_URL}${product.Url}"oter">
